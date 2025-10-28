@@ -1,0 +1,20 @@
+function pallindrome (inputString){
+  inputString = inputString.toLowerCase();
+  let splitString = inputString.split('');
+  let reverseSplit = splitString.reverse();
+  let reverseString = reverseSplit.join('');
+
+  console.log ("Input String: ",inputString);
+  console.log("Reverse String: ",reverseString);
+  // compare both string
+  if (inputString === reverseString){
+    return "Pallindrome"
+  }
+  else{
+    return "Not Pallindrome"
+  }
+
+}
+
+console.log(pallindrome("Madam"));
+console.log(pallindrome("tekDhami"));
